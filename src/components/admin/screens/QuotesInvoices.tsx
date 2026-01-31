@@ -204,7 +204,7 @@ export function QuotesInvoices() {
               <CardContent>
                 <div className="p-4 rounded-lg border bg-card">
                   <div className="text-center mb-4 pb-4 border-b">
-                    <h3 className="font-bold text-lg">FieldAI Pro</h3>
+                    <h3 className="font-bold text-lg">A1 Phoenix Plumbing</h3>
                     <p className="text-xs text-muted-foreground">{invoicePreview.id}</p>
                   </div>
                   

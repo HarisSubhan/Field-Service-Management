@@ -13,6 +13,7 @@ import {
   Zap
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logo from "../../../public/logo.png";
 
 interface AdminSidebarProps {
   currentScreen: string;
@@ -41,15 +42,19 @@ export function AdminSidebar({ currentScreen, onNavigate, collapsed, onToggle }:
       )}
     >
       {/* Logo */}
-      <div className="p-4 border-b border-sidebar-border">
+      <div className="p-6 border-b border-sidebar-border">
+        <div style={{backgroundColor: "#ffffff"}}>
+
+          <img src={logo} alt="" />
+        </div>
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-lg gradient-orange flex items-center justify-center flex-shrink-0">
+          {/* <div className="w-10 h-10 rounded-lg gradient-orange flex items-center justify-center flex-shrink-0">
             <Zap className="w-6 h-6 text-white" />
-          </div>
+          </div> */}
           {!collapsed && (
             <div className="overflow-hidden">
-              <h1 className="font-bold text-lg text-white truncate">FieldAI Pro</h1>
-              <p className="text-xs text-sidebar-foreground/60">Field Service Management</p>
+              <h1 className="font-bold text-lg text-white truncate">A1 Phoenix Plumbing</h1>
+              <p className="text-xs text-sidebar-foreground/60">A1 Phoenix Plumbing Dashboard</p>
             </div>
           )}
         </div>

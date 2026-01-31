@@ -2,18 +2,25 @@ import { Zap, Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import logo from "../../../public/logo.png";
+
 
 export function TechnicianLogin() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
     <div className="h-full flex flex-col bg-sidebar">
+       
       {/* Logo Section */}
       <div className="flex-1 flex flex-col items-center justify-center px-8">
-        <div className="w-20 h-20 rounded-2xl gradient-orange flex items-center justify-center mb-6 shadow-lg">
-          <Zap className="w-10 h-10 text-white" />
+        <div style={{backgroundColor: "#ffffff", }}>
+
+          <img width={150} height={80} src={logo} alt="" />
         </div>
-        <h1 className="text-2xl font-bold text-white mb-1">FieldAI Pro</h1>
+        {/* <div className="w-20 h-20 rounded-2xl gradient-orange flex items-center justify-center mb-6 shadow-lg">
+          <Zap className="w-10 h-10 text-white" />
+        </div> */}
+        <h1 className="text-2xl font-bold text-white mb-1">A1 Phoenix Plumbing</h1>
         <p className="text-sidebar-foreground/60 text-sm">Technician Portal</p>
       </div>
 
